@@ -6,6 +6,8 @@ set (CMAKE_PREFIX_PATH "D:\\Qt\\Qt5.6.3\\5.6.3\\msvc2010\\")
 option(SPIX_BUILD_EXAMPLES "Build Spix examples." ON)
 option(SPIX_BUILD_TESTS "Build Spix unit tests." OFF)
 
+find_package(Qt5 COMPONENTS Core Widgets REQUIRED)
+
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
 set(CMAKE_CXX_STANDARD 14)
 
